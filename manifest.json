@@ -1,0 +1,16 @@
+{
+  "name": "Learniverse",
+  "short_name": "Learniverse",
+  "description": "A crypto and web3 learning app for everyone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "src/assets/logo.svg",
+      "sizes": "262x227",
+      "type": "image/svg"
+    }
+  ]
+}
