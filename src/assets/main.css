@@ -38,10 +38,10 @@ a,
 
   #app {
     /*这个属性将#app元素的显示方式设置为网格布局，使其内部的子元素可以使用网格布局*/
-    display: grid;
+    /*display: grid;*/
     /*这个属性设置了网格布局的列模板，将#app元素的内容分为两列，每列的宽度相等*/
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     /*这个属性设置了#app元素的内边距，左右各为2个rem单位，上下为0。*/
-    padding: 0 2rem;
+    /*padding: 0 2rem;*/
   }
 }
