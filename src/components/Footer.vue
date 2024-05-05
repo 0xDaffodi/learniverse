@@ -2,19 +2,20 @@
 <script setup>
 import FooterIcon from "@/components/FooterIcon.vue";
 </script>
-
+<!--TODO: 按钮点击事件-->
+<!--BUG: SVG图片无法BUILD-->
 <template>
   <div class="footerParent">
     <div class="footerRectangleWrapper">
       <div class="footer">
         <div class="footerIcon1">
-          <FooterIcon text="Learn" url="/src/assets/learn_icon.svg"/>
+          <FooterIcon text="Learn" url="/src/assets/learn_icon.png" :select="true"/>
         </div>
         <div class="footerIcon2">
-          <FooterIcon text="Ask" url="/src/assets/ask_icon.svg"/>
+          <FooterIcon text="Ask" url="/src/assets/ask_icon.png" :select="false"/>
         </div>
         <div class="footerIcon3">
-          <FooterIcon text="Community" url="/src/assets/community_icon.svg"/>
+          <FooterIcon text="Community" url="/src/assets/community_icon.png" :select="false"/>
         </div>
       </div>
     </div>

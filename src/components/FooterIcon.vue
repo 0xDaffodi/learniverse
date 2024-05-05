@@ -8,13 +8,18 @@ defineProps({
   url: {
     type: String,
     required: true
+  },
+  select: {
+    type: Boolean,
+    default: false
   }
 })
 </script>
 
 <template>
   <div class="footerIconParent">
-    <div class="footerIconTextArea">{{text}}</div>
+    <!--判断是否select-->
+    <div :class="[select ? 'footerIconSelectTextArea' : 'footerIconUnSelectTextArea']">{{text}}</div>
     <!--使用url src绑定props可以使用v-bind语法-->
     <img class="footerIconIcon" alt="" :src="url" />
   </div>
@@ -36,7 +41,7 @@ defineProps({
   /* 定位颜色 */
   /* background: rgba(0, 255, 255, 0.5); */
 }
-.footerIconTextArea {
+.footerIconUnSelectTextArea {
   position: absolute;
   height: 38.89%;
   width: 95%;
@@ -46,8 +51,22 @@ defineProps({
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  /* 定位颜色 */
-  /* background: rgba(0, 255, 255, 0.5); */
+}
+.footerIconSelectTextArea {
+  position: absolute;
+  height: 38.89%;
+  width: 95%;
+  top: 50%;
+  left: 1.85%;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background: linear-gradient(-86.5deg, #ffbbe2, #68ffdb 52%, #ba26ff);
+  -webkit-background-clip: text; /* Safari/Chrome */
+  background-clip: text; /* Firefox */
+  color: transparent;
 }
 .footerIconIcon {
   position: absolute;
@@ -60,8 +79,6 @@ defineProps({
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  /* 定位颜色 */
-  /* background: rgba(0, 255, 255, 0.5); */
 }
 
 
