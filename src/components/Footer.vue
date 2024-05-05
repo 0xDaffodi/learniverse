@@ -8,13 +8,13 @@ import FooterIcon from "@/components/FooterIcon.vue";
     <div class="footerRectangleWrapper">
       <div class="footer">
         <div class="footerIcon1">
-          <FooterIcon text="Learn" url="../assets/learn_icon.svg"/>
+          <FooterIcon text="Learn" url="/src/assets/learn_icon.svg"/>
         </div>
         <div class="footerIcon2">
-          <FooterIcon text="Ask" url="../assets/ask_icon.svg"/>
+          <FooterIcon text="Ask" url="/src/assets/ask_icon.svg"/>
         </div>
         <div class="footerIcon3">
-          <FooterIcon text="Community" url="../assets/community_icon.svg"/>
+          <FooterIcon text="Community" url="/src/assets/community_icon.svg"/>
         </div>
       </div>
     </div>
