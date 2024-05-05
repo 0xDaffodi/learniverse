@@ -93,3 +93,15 @@ body {
   /*这个属性用于在Firefox浏览器中启用字体抗锯齿。它也使字体边缘更平滑，提供更好的显示效果*/
   -moz-osx-font-smoothing: grayscale;
 }
+
+body::after{
+  /* 定位颜色 */
+  background: rgba(0, 255, 255, 0.5);
+}
+
+/*Fonts*/
+@font-face {
+  font-family: 'Fredoka-Medium';
+  src: url('@/assets/fonts/Fredoka-Medium.ttf') format('opentype');
+  font-weight: 700;
+}

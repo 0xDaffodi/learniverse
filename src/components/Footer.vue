@@ -1,16 +1,28 @@
+<!--README:app底部导航-->
+<script setup>
+import FooterIcon from "@/components/FooterIcon.vue";
+</script>
+
 <template>
-  <div class="groupParent">
-    <div class="rectangleWrapper">
-      <div class="groupChild" />
+  <div class="footerParent">
+    <div class="footerRectangleWrapper">
+      <div class="footer">
+        <div class="footerIcon1">
+          <FooterIcon text="Learn" url="src/assets/learn_icon.svg"/>
+        </div>
+        <div class="footerIcon2">
+          <FooterIcon text="Ask" url="src/assets/ask_icon.svg"/>
+        </div>
+        <div class="footerIcon3">
+          <FooterIcon text="Community" url="src/assets/community_icon.svg"/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup>
-</script>
-
 <style scoped>
-.groupParent {
+.footerParent {
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -20,24 +32,34 @@
   width: 330px;
   z-index: 10;
 }
-.rectangleWrapper {
+.footerRectangleWrapper {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
 }
-.groupChild {
+.footer {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
   border-radius: 100px;
   background-color: #222;
+}
+/*定位点1*/
+.footerIcon1 {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+/*定位点2*/
+.footerIcon2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+/*定位点3*/
+.footerIcon3 {
+  position: absolute;
+  left: 75%;
+  top: 50%;
 }
 </style>
