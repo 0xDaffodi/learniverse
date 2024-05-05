@@ -9,13 +9,13 @@ import FooterIcon from "@/components/FooterIcon.vue";
     <div class="footerRectangleWrapper">
       <div class="footer">
         <div class="footerIcon1">
-          <FooterIcon text="Learn" url="/src/assets/learn_icon.png" :select="true"/>
+          <FooterIcon text="Learn" url="/learn_icon.svg" :select="true"/>
         </div>
         <div class="footerIcon2">
-          <FooterIcon text="Ask" url="/src/assets/ask_icon.png" :select="false"/>
+          <FooterIcon text="Ask" url="/ask_icon.svg" :select="false"/>
         </div>
         <div class="footerIcon3">
-          <FooterIcon text="Community" url="/src/assets/community_icon.png" :select="false"/>
+          <FooterIcon text="Community" url="/community_icon.svg" :select="false"/>
         </div>
       </div>
     </div>
@@ -49,18 +49,18 @@ import FooterIcon from "@/components/FooterIcon.vue";
 .footerIcon1 {
   position: absolute;
   left: 25%;
-  top: 50%;
+  top: 55%;
 }
 /*定位点2*/
 .footerIcon2 {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 55%;
 }
 /*定位点3*/
 .footerIcon3 {
   position: absolute;
   left: 75%;
-  top: 50%;
+  top: 55%;
 }
 </style>
