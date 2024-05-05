@@ -20,6 +20,7 @@ defineProps({
   </div>
 </template>
 
+
 <style scoped>
 .footerIconParent {
   /*这个保证所有footer icon的定位都是根据自己的中心点来定位*/
