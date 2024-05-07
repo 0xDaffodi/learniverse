@@ -7,17 +7,18 @@ import LearningChapter from "@/components/LearningChapter.vue";
 </script>
 <!--TODO: PWA ICON图片需要修改正式版本-->
 <!--TODO: 修改*HEADER FOOTER的弹性布局以应对网页版本-->
+<!--TODO: 在移动端中，部分SVG图片会显示出模糊的样式，还不知原因-->
 <template>
   <Header />
 
+  <!--TEST：VUE模版文件-->
+  <!--  <header>-->
+  <!--    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />-->
 
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <!--    <div class="wrapper">-->
+  <!--      <HelloWorld msg="You did it!" />-->
+  <!--    </div>-->
+  <!--  </header>-->
 
   <!--TEST: Learning chapter-->
   <LearningChapter
@@ -25,8 +26,44 @@ import LearningChapter from "@/components/LearningChapter.vue";
     summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
     picUrl="/learningSection_centralizeExchange.svg"
   />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
+  <LearningChapter
+      :finish = "false" :answered-number = "1" :total-number = "15" title = "Centralized Exchange"
+      summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+      picUrl="/learningSection_centralizeExchange.svg"
+  />
 
-  <TheWelcome />
+  <!--TEST：VUE模版文件-->
+  <!--  <TheWelcome />-->
 
   <Footer />
 </template>
