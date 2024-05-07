@@ -41,21 +41,22 @@
 .headerParent {
   width: 100%;
   position: fixed;
-  height: 114px;
+  height: 134px;
   text-align: right;
   font-size: 20px;
   color: #3b3b3b;
   left: 50%;
   transform: translateX(-50%);
   font-family: Fredoka-Medium;
-  top: 20px;
-  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
+  top: 0;
   z-index: 10;
   display: flex;
+  /*MASK*/
+  background: white;
 }
 .headerTopButton {
   position: absolute;
-  top: 15px;
+  top: 35px;
   left: 50%;
   transform: translateX(-50%);
   width: 188px;
@@ -145,7 +146,7 @@
 .headerQuestions {
   position: absolute;
   flex: 1;
-  top: 13px;
+  top: 33px;
   right: 10px;
   width: 45px;
   height: 45px;
@@ -153,7 +154,7 @@
 .headerProfile {
   position: absolute;
   flex: 1;
-  top: 13px;
+  top: 33px;
   left: 10px;
   width: 45px;
   height: 45px;
@@ -162,7 +163,7 @@
   position: absolute;
   height: 20.28px;
   width: 60px;
-  top: 75px;
+  top: 95px;
   right: 16px;
   /* background: rgba(0, 255, 255, 0.5); */
 }
@@ -187,7 +188,7 @@
   position: absolute;
   height: 20.28px;
   width: 60px;
-  top: 75px;
+  top: 95px;
   right: 100px;
 }
 .headerIconMoney {
@@ -211,7 +212,7 @@
   position: absolute;
   height: 20.28px;
   width: 80px;
-  top: 75px;
+  top: 95px;
   left: 20px;
 }
 .headerStagesText {
