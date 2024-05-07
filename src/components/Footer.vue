@@ -4,6 +4,7 @@ import FooterIcon from "@/components/FooterIcon.vue";
 </script>
 <!--TODO: 按钮点击事件-->
 <!--BUG: SVG图片无法BUILD => RESOLVE: SVG图片不可以放在Assets路径，放到了public下可以正常加载。但仍有疑问？-->
+<!--BUG: LEARN ICON的SVG版本在移动端出现了边缘模糊的情况-->
 <template>
   <div class="footerParent">
     <div class="footerRectangleWrapper">

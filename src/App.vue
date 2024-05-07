@@ -2,9 +2,13 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Footer from "./components/Footer.vue";
+import Header from "@/components/Header.vue";
 </script>
-
+<!--TODO: PWA ICON图片需要修改正式版本-->
+<!--TODO: 修改*HEADER FOOTER的弹性布局以应对网页版本-->
 <template>
+  <Header />
+
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 

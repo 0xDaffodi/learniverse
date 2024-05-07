@@ -20,36 +20,31 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
-
 /* semantic color variables for this project */
 :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
-
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
-
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
-
   --section-gap: 160px;
 }
+/*深色模式偏好*/
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --color-background: var(--vt-c-black);*/
+/*    --color-background-soft: var(--vt-c-black-soft);*/
+/*    --color-background-mute: var(--vt-c-black-mute);*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+/*    --color-border: var(--vt-c-divider-dark-2);*/
+/*    --color-border-hover: var(--vt-c-divider-dark-1);*/
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
-
+/*    --color-heading: var(--vt-c-text-dark-1);*/
+/*    --color-text: var(--vt-c-text-dark-2);*/
+/*  }*/
+/*}*/
 *,
 *::before,
 *::after {
@@ -57,7 +52,6 @@
   margin: 0;
   font-weight: normal;
 }
-
 body {
   min-height: 100vh;
   /*文本颜色*/
@@ -93,12 +87,6 @@ body {
   /*这个属性用于在Firefox浏览器中启用字体抗锯齿。它也使字体边缘更平滑，提供更好的显示效果*/
   -moz-osx-font-smoothing: grayscale;
 }
-
-body::after{
-  /* 定位颜色 */
-  background: rgba(0, 255, 255, 0.5);
-}
-
 /*Fonts*/
 @font-face {
   font-family: 'Fredoka-Medium';

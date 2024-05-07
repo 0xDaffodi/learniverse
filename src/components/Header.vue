@@ -1,0 +1,272 @@
+<script setup>
+
+</script>
+
+<template>
+  <div class="headerParent">
+    <div class="headerTopButton">
+      <div class="headerTopButtonPanel" />
+      <div class="headerWeb3Parent">
+        <div class="headerWeb3">WEB 3</div>
+      </div>
+      <!--GATEWAY SECTION-->
+      <div class="headerGatewayParent">
+        <div class="headerGatewayMask" />
+        <div class="headerGatewayBorder" />
+        <div class="headerGatewayBorderMask">
+          <div class="headerGatewayInner" />
+        </div>
+        <div class="headerGateway">Gateway</div>
+      </div>
+    </div>
+    <img class="headerQuestions" alt="" src="/questions_icon.svg" />
+    <img class="headerProfile" alt="" src="/profile_icon.svg" />
+    <div class="headerPointsParent">
+      <img class="headerIconTwitter" alt="" src="/points_icon.svg" />
+      <div class="headerPointsNumber">100</div>
+    </div>
+    <div class="headerAssetsParent">
+      <div class="headerAssetsNumber">100</div>
+      <img class="headerIconMoney" alt="" src="/assets_icon.svg" />
+    </div>
+    <div class="headerStagesParent">
+      <div class="headerStagesText">STAGE</div>
+      <img class="headerStagesIcon" alt="" src="/stage_icon.svg" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.headerParent {
+  width: 100%;
+  position: fixed;
+  height: 114px;
+  text-align: right;
+  font-size: 20px;
+  color: #3b3b3b;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Fredoka-Medium;
+  top: 50px;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
+  z-index: 10;
+  display: flex;
+  /* 定位颜色 */
+}
+.headerTopButton {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 188px;
+  height: 41px;
+  font-size: 15px;
+  color: #fff;
+}
+.headerTopButtonPanel {
+  position: absolute;
+  border-radius: 30px;
+  background-color: #3b3b3b;
+  width: 100%;
+  height: 100%;
+}
+.headerWeb3Parent {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  width: 91px;
+  height: 33px;
+}
+.headerWeb3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /*文本水平垂直均居中*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerGatewayParent {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 91px;
+  height: 33px;
+}
+.headerGatewayMask {
+  position: absolute;
+  border-radius: 100px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.headerGatewayBorder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  background: linear-gradient(261.39deg, rgb(255, 70, 181), rgb(0, 226, 174) 52%, rgb(127, 0, 187));
+}
+/*MENTION:通过添加多重MASK的方式模拟border加渐变的特殊效果*/
+.headerGatewayBorderMask {
+  position: absolute;
+  border-radius: 100px;
+  background-color: #fff;
+  width: 95%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.headerGatewayInner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  background: linear-gradient(261.39deg, rgba(255, 187, 226, 0.5), rgba(104, 255, 219, 0.5) 52%, rgba(173, 0, 255, 0.5));
+}
+.headerGateway {
+  position: absolute;
+  background: linear-gradient(-90deg, #ff62c5, #01cea0 50.5%, #a100ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /*文本水平垂直均居中*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerQuestions {
+  position: absolute;
+  flex: 1;
+  top: 13px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+}
+.headerProfile {
+  position: absolute;
+  flex: 1;
+  top: 13px;
+  left: 10px;
+  width: 45px;
+  height: 45px;
+}
+.headerPointsParent {
+  position: absolute;
+  height: 20.28px;
+  width: 60px;
+  top: 75px;
+  right: 16px;
+  /* background: rgba(0, 255, 255, 0.5); */
+}
+.headerPointsNumber {
+  display: flex;
+  align-items: center; /* 在垂直方向上居中 */
+  justify-content: flex-end; /* 在水平方向上右对齐 */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+}
+.headerIconTwitter {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.headerAssetsParent {
+  position: absolute;
+  height: 20.28px;
+  width: 60px;
+  top: 75px;
+  right: 100px;
+}
+.headerIconMoney {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.headerAssetsNumber {
+  display: flex;
+  align-items: center; /* 在垂直方向上居中 */
+  justify-content: flex-end; /* 在水平方向上右对齐 */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+}
+.headerStagesParent {
+  position: absolute;
+  height: 20.28px;
+  width: 80px;
+  top: 75px;
+  left: 20px;
+}
+.headerStagesText {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; /* 在垂直方向上居中 */
+  justify-content: flex-end; /* 在水平方向上右对齐 */
+}
+.headerStagesIcon {
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
