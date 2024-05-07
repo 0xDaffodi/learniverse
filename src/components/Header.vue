@@ -47,11 +47,10 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: Fredoka-Medium;
-  top: 50px;
+  top: 20px;
   filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
   z-index: 10;
   display: flex;
-  /* 定位颜色 */
 }
 .headerTopButton {
   position: absolute;
@@ -227,46 +226,5 @@
   width: 14px;
   height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </style>
