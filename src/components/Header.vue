@@ -1,3 +1,4 @@
+<!--README:app顶部栏-->
 <script setup>
 
 </script>
@@ -109,6 +110,7 @@
   background: linear-gradient(261.39deg, rgb(255, 70, 181), rgb(0, 226, 174) 52%, rgb(127, 0, 187));
 }
 /*MENTION:通过添加多重MASK的方式模拟border加渐变的特殊效果*/
+/*TODO：可以修改为通过class:before来添加渐变效果，缺陷是会超出100%area*/
 .headerGatewayBorderMask {
   position: absolute;
   border-radius: 100px;
