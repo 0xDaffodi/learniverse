@@ -3,6 +3,7 @@
 import LearningChapter from "@/components/LearningChapter.vue";
 import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
 import LearningSectionTest from "@/components/LearningSectionTest.vue";
+import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
 </script>
 
 <template>
@@ -52,6 +53,8 @@ import LearningSectionTest from "@/components/LearningSectionTest.vue";
     <LearningSectionTest
         :number="2" name="Platform" :remaining-chapter-number="3" :reward-number="200"
     />
+
+    <LearningWhatsNext />
 
     <LearningSectionTitle
         :number="2" name="Platform"

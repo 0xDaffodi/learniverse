@@ -1,9 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import Footer from "./components/Footer.vue";
 import Header from "@/components/Header.vue";
-import LearningChapter from "@/components/LearningChapter.vue";
 import LearningScrollView from "@/components/LearningScrollView.vue";
 </script>
 <!--TODO: PWA ICON图片需要修改正式版本-->
