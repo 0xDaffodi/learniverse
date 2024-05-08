@@ -1,6 +1,7 @@
 <!--README:app顶部栏-->
 <script setup>
 
+
 </script>
 
 <template>
@@ -30,7 +31,8 @@
       <div class="headerAssetsNumber">100</div>
       <img class="headerIconMoney" alt="" src="/assets_icon.svg" />
     </div>
-    <div class="headerStagesParent">
+    <!--emit订阅来自父组件的方法-->
+    <div class="headerStagesParent"  @click="$emit('toggle-stage')">
       <div class="headerStagesText">STAGE</div>
       <img class="headerStagesIcon" alt="" src="/stage_icon.svg" />
     </div>
@@ -50,7 +52,7 @@
   font-family: Fredoka-Medium;
   top: 0;
   z-index: 10;
-  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
+  /*filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));*/
   /*MASK*/
   /*background: white;*/
 }

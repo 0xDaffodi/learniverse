@@ -103,3 +103,8 @@ body {
   src: url('@/assets/fonts/Fredoka-SemiBold.ttf') format('opentype');
   font-weight: 700;
 }
+
+/*z index管理记录*/
+/*Header， footer：10*/
+/*scroll view： 5*/
+/*stage：15*/
