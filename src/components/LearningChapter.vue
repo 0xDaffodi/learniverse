@@ -59,8 +59,9 @@ defineProps({
   /* 定位颜色 */
   /* background: rgba(0, 255, 255, 0.2); */
 }
+
 /*用于模拟PANEL BORDER的渐变效果,缺陷是会超出100%*/
-.learningChapterGreyPanel:before {
+/*.learningChapterGreyPanel:before {
   content: "";
   position: absolute;
   top: -2px;
@@ -70,14 +71,26 @@ defineProps({
   border-radius: 15px;
   z-index: -1;
   background: linear-gradient(280deg, rgba(185, 47, 250), rgba(133, 249, 222) 52%, rgba(255, 201, 233));
-}
-.learningChapterGreyPanel {
+}*/
+/*.learningChapterGreyPanel {
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 15px;
   background-color: #eaeaea;
+}*/
+/*MENTION: 这样实现的边框渐变效果不够优雅，并且以超出范围为代价。这里学习一种优雅的border渐变的方法*/
+.learningChapterGreyPanel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, #eaeaea, #eaeaea), linear-gradient(280deg, rgba(185, 47, 250), rgba(133, 249, 222) 52%, rgba(255, 201, 233));
 }
+
 .learningChapterInner {
   position: absolute;
   height: 67%;

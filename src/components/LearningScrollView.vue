@@ -2,6 +2,7 @@
 <script setup>
 import LearningChapter from "@/components/LearningChapter.vue";
 import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
+import LearningSectionTest from "@/components/LearningSectionTest.vue";
 </script>
 
 <template>
@@ -24,6 +25,9 @@ import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
         summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
         picUrl="/learningSection_centralizeExchange.svg"
     />
+
+    <LearningSectionTest />
+
     <LearningSectionTitle
         :number="2" name="Platform"
     />
