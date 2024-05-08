@@ -53,6 +53,25 @@ import LearningSectionTest from "@/components/LearningSectionTest.vue";
         :number="2" name="Platform" :remaining-chapter-number="3" :reward-number="200"
     />
 
+    <LearningSectionTitle
+        :number="2" name="Platform"
+    />
+    <LearningChapter
+        :finish = "false" :answered-number = "0" :total-number = "15" title = "Centralized Exchange"
+        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+        picUrl="/learningSection_centralizeExchange.svg"
+    />
+    <LearningChapter
+        :finish = "false" :answered-number = "0" :total-number = "15" title = "Decentralized Exchange"
+        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+        picUrl="/learningSection_centralizeExchange.svg"
+    />
+    <LearningChapter
+        :finish = "false" :answered-number = "0" :total-number = "15" title = "Infersturcture"
+        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
+        picUrl="/learningSection_centralizeExchange.svg"
+    />
+
   </div>
 </template>
 

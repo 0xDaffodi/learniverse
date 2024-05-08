@@ -40,7 +40,11 @@ defineProps({
     </template>
     <template v-else>
       <div class="learningSectionTestRemainingPanel">
-        <div ></div>
+        <div class="learningSectionTestRemainingPanelRemainingNumber">{{remainingChapterNumber}}</div>
+        <div class="learningSectionTestRemainingPanelCompleteIconParent">
+          <img class="learningSectionTestRemainingPanelCompleteIcon" src="/learningComplete_icon.svg" alt="">
+        </div>
+        <div class="learningSectionTestRemainingPanelRemainingToUnlock">to unlock</div>
       </div>
     </template>
   </div>
@@ -143,6 +147,45 @@ defineProps({
   background-origin: padding-box, border-box;
   background-image: linear-gradient(to right, #EAEAEA, #EAEAEA), linear-gradient(280deg, #FF46B5, #00E2AE, #7F00BB);
 }
-
+.learningSectionTestRemainingPanelRemainingNumber {
+  position: absolute;
+  height: 25px;
+  width: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: Fredoka-SemiBold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.learningSectionTestRemainingPanelCompleteIconParent {
+  position: absolute;
+  height: 28px;
+  width: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  background: #3B3B3B;
+  border-radius: 5px;
+}
+.learningSectionTestRemainingPanelCompleteIcon {
+  position: absolute;
+  height: 17px;
+  width: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.learningSectionTestRemainingPanelRemainingToUnlock {
+  position: absolute;
+  height: 25px;
+  width: 70px;
+  color: black;
+  font-size: 15px;
+  font-family: Fredoka-SemiBold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 95px;
+}
 
 </style>
