@@ -1,13 +1,8 @@
 <!--README:app learning section title-->
 <script setup>
 defineProps({
-  // 这是第几section
-  number: {
-    type: Number,
-    default: false
-  },
-  // 标题名称
-  name: {
+  // 内容
+  text: {
     type: String,
     required: true
   }
@@ -16,7 +11,7 @@ defineProps({
 
 <template>
   <div class="learningSectionTitleParent">
-    <div class="learningSectionTitleName">Level {{number}}: {{name}}</div>
+    <div class="learningSectionTitleName">{{text}}</div>
     <div class="learningSectionTitleLine"/>
   </div>
 </template>

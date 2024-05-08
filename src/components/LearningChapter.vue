@@ -35,7 +35,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="learningSectionTestParent">
+  <div class="learningChapterParent">
     <div class="learningChapterGreyPanel">
       <div class="learningChapterInner" />
       <div class="learningChapterTitle">{{title}}</div>
@@ -51,7 +51,7 @@ defineProps({
 </template>
 
 <style scoped>
-.learningSectionTestParent {
+.learningChapterParent {
   width: 100%;
   height: 158px;
   /*MENTION：这里必须要使用relative而不是absolute。absolute会导致堆叠*/

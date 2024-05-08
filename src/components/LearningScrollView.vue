@@ -9,7 +9,7 @@ import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
 <template>
   <div class="learningScrollViewParent">
     <LearningSectionTitle
-        :number="1" name="Gateway to WEB 3.0"
+        text="Level 1: Gateway to WEB 3.0"
     />
     <LearningChapter
         :finish = "false" :answered-number = "1" :total-number = "15" title = "What is bitcoin?"
@@ -32,7 +32,7 @@ import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
     />
 
     <LearningSectionTitle
-        :number="2" name="Platform"
+        text="Level 2: Platform"
     />
     <LearningChapter
         :finish = "false" :answered-number = "0" :total-number = "15" title = "Centralized Exchange"
@@ -54,26 +54,10 @@ import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
         :number="2" name="Platform" :remaining-chapter-number="3" :reward-number="200"
     />
 
-    <LearningWhatsNext />
+    <LearningWhatsNext
+      :next-section="['3. Ecosystem', '4. Infertructure']"
+    />
 
-    <LearningSectionTitle
-        :number="2" name="Platform"
-    />
-    <LearningChapter
-        :finish = "false" :answered-number = "0" :total-number = "15" title = "Centralized Exchange"
-        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
-        picUrl="/learningSection_centralizeExchange.svg"
-    />
-    <LearningChapter
-        :finish = "false" :answered-number = "0" :total-number = "15" title = "Decentralized Exchange"
-        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
-        picUrl="/learningSection_centralizeExchange.svg"
-    />
-    <LearningChapter
-        :finish = "false" :answered-number = "0" :total-number = "15" title = "Infersturcture"
-        summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
-        picUrl="/learningSection_centralizeExchange.svg"
-    />
 
   </div>
 </template>
