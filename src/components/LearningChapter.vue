@@ -54,7 +54,6 @@ defineProps({
 .learningChapterParent {
   width: 100%;
   height: 158px;
-  display: flex;
   /*这里后续进入Scroll view的时候应该需要替换成absolute*/
   position: relative;
   /* 定位颜色 */
