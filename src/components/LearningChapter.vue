@@ -54,7 +54,7 @@ defineProps({
 .learningChapterParent {
   width: 100%;
   height: 158px;
-  /*这里后续进入Scroll view的时候应该需要替换成absolute*/
+  /*MENTION：这里必须要使用relative而不是absolute。absolute会导致堆叠*/
   position: relative;
   /* 定位颜色 */
   /* background: rgba(0, 255, 255, 0.2); */

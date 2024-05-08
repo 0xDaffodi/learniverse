@@ -40,7 +40,6 @@ import LearningChapter from "@/components/LearningChapter.vue";
 </template>
 
 <style scoped>
-/* TODO:SCROLL VIEW 的尺寸在上方会空出部分距离 */
 .learningScrollViewParent {
   width: 100%;
   position: fixed;
@@ -49,9 +48,14 @@ import LearningChapter from "@/components/LearningChapter.vue";
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
-  padding: 1.4rem;
+  padding: 0 1.4rem;
   overflow-y: auto; /* 垂直滚动 */
   /*定位背景*/
   background: rgba(0, 100, 100, 0.5);
+}
+/* 添加垂直间隔 */
+.learningScrollViewParent > * {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
