@@ -27,7 +27,7 @@ import LearningSectionTest from "@/components/LearningSectionTest.vue";
     />
 
     <LearningSectionTest
-      :number="1" name="Gateway to WEB 3.0"
+      :number="1" name="Gateway to WEB 3.0" :remaining-chapter-number="0" :reward-number="100"
     />
 
     <LearningSectionTitle
@@ -47,6 +47,10 @@ import LearningSectionTest from "@/components/LearningSectionTest.vue";
         :finish = "false" :answered-number = "0" :total-number = "15" title = "Infersturcture"
         summary="Description Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous"
         picUrl="/learningSection_centralizeExchange.svg"
+    />
+
+    <LearningSectionTest
+        :number="2" name="Platform" :remaining-chapter-number="3" :reward-number="200"
     />
 
   </div>

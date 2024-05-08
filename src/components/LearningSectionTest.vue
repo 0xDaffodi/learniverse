@@ -14,6 +14,11 @@ defineProps({
   remainingChapterNumber: {
     type: Number,
     required: true
+  },
+  // 本章节最终应得的奖励点数
+  rewardNumber: {
+    type: Number,
+    required: true
   }
 })
 </script>
@@ -24,8 +29,20 @@ defineProps({
       <div class="learningSectionTestNumber">TEST {{number}}:</div>
       <div class="learningSectionTestName">{{name}}</div>
     </div>
-    <div class="learningSectionTestRewardPanel">
-    </div>
+
+    <!--如果剩余的答题数量为0，则选用reward panel；如果剩余有答题数量，则选用number panel-->
+    <template v-if="remainingChapterNumber === 0">
+      <div class="learningSectionTestRewardPanel">
+        <div class="learningSectionTestRewardPanelRewardsTitle">Rewards:</div>
+        <img class="learningSectionTestRewardPanelRewardsIcon" src="/points_icon.svg" alt="">
+        <div class="learningSectionTestRewardPanelRewardsNumber">{{rewardNumber}}</div>
+      </div>
+    </template>
+    <template v-else>
+      <div class="learningSectionTestRemainingPanel">
+        <div ></div>
+      </div>
+    </template>
   </div>
 
 
@@ -69,6 +86,51 @@ defineProps({
   font-family: Fredoka-Medium;
 }
 .learningSectionTestRewardPanel {
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(240deg, #fdc2e3, #a4ffe7 40%, #d779ff), linear-gradient(280deg, #FF46B5, #00E2AE, #7F00BB);
+}
+.learningSectionTestRewardPanelRewardsTitle {
+  position: absolute;
+  height: 25px;
+  width: 75px;
+  color: black;
+  font-size: 15px;
+  font-family: Fredoka-SemiBold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.learningSectionTestRewardPanelRewardsIcon {
+  position: absolute;
+  height: 18px;
+  width: 25px;
+  /*MENTION: 将一个图片用filter变成纯黑色*/
+  filter: grayscale(100%) brightness(0);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+}
+.learningSectionTestRewardPanelRewardsNumber {
+  position: absolute;
+  height: 25px;
+  width: 50px;
+  color: black;
+  font-size: 15px;
+  font-family: Fredoka-SemiBold;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 125px;
+}
+.learningSectionTestRemainingPanel {
   position: absolute;
   height: 50px;
   width: 180px;
