@@ -26,7 +26,9 @@ import LearningSectionTest from "@/components/LearningSectionTest.vue";
         picUrl="/learningSection_centralizeExchange.svg"
     />
 
-    <LearningSectionTest />
+    <LearningSectionTest
+      :number="1" name="Gateway to WEB 3.0"
+    />
 
     <LearningSectionTitle
         :number="2" name="Platform"

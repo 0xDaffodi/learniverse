@@ -35,7 +35,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="learningChapterParent">
+  <div class="learningSectionTestParent">
     <div class="learningChapterGreyPanel">
       <div class="learningChapterInner" />
       <div class="learningChapterTitle">{{title}}</div>
@@ -51,7 +51,7 @@ defineProps({
 </template>
 
 <style scoped>
-.learningChapterParent {
+.learningSectionTestParent {
   width: 100%;
   height: 158px;
   /*MENTION：这里必须要使用relative而不是absolute。absolute会导致堆叠*/
@@ -80,6 +80,7 @@ defineProps({
   background-color: #eaeaea;
 }*/
 /*MENTION: 这样实现的边框渐变效果不够优雅，并且以超出范围为代价。这里学习一种优雅的border渐变的方法*/
+/*参考自在：https://juejin.cn/post/7017701121619656711*/
 .learningChapterGreyPanel {
   position: absolute;
   height: 100%;
