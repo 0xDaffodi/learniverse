@@ -31,7 +31,7 @@ defineProps({
   left: 20px;*/
   font-family: Fredoka-Medium;
   font-size: 20px;
-  background: rgba(0, 100, 100, 0.5);
+  /*background: rgba(0, 100, 100, 0.5);*/
 }
 .stageButtonText {
   position: absolute;
