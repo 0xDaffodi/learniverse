@@ -11,6 +11,7 @@ defineProps({
 </script>
 
 <template>
+  <div class="stageMask"></div>
   <div class="stageParent">
     <StageButton left="10px" top="25px" :toggleStageVisibility="toggleStageVisibility"/>
     <StageSearch />
@@ -36,6 +37,16 @@ defineProps({
 </template>
 
 <style scoped>
+.stageMask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.4);
+}
 .stageParent {
   position: fixed;
   width: 295px;
