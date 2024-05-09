@@ -65,6 +65,8 @@ import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
 <style scoped>
 .learningScrollViewParent {
   width: 100%;
+  /*这里是不是也可以用relative，但是应该需要单独设定padding*/
+  /*BUG: 不知道为什么这里无法设定relative，但是关卡页面却可以。也许是因为app没有设置fixed属性*/
   position: fixed;
   height: 87%;
   top: 114px;
