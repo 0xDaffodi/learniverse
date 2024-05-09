@@ -151,13 +151,13 @@ function drag(){
   background-image: linear-gradient(240deg, #fdc2e3, #a4ffe7 40%, #d779ff), linear-gradient(280deg, #FF46B5, #00E2AE, #7F00BB);
 }
 .stageMenuDragTestProgressText {
-  position: relative;
+  position: absolute;
   font-family: Fredoka-SemiBold;
   font-size: 12px;
   color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .stageMenuDragTestProgressTitle {
   position: absolute;
