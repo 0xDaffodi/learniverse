@@ -6,8 +6,9 @@ import Stage from "@/components/Stage.vue";
 import {ref} from "vue";
 
 // 创建一个响应式的布尔类型的数据属性
-const isStageVisible = ref(false);
+const isStageVisible = ref(true);
 // 切换 Stage 组件的显示状态
+// MENTION：为了实现方法自上而下的层层传递，需要在每一层都定义prop来层层传递
 function toggleStageVisibility() {
   isStageVisible.value = !isStageVisible.value;
 }
@@ -19,13 +20,13 @@ function toggleStageVisibility() {
 <!--TODO: 删除vue模版文件中的vue组件-->
 <!--TODO: PWA应用的背景还可以过度滑动，但是例如sosovalue就没有这个问题-->
 <template>
-  <Header @toggle-stage="toggleStageVisibility"/>
+  <Header :toggleStageVisibility="toggleStageVisibility"/>
 
   <LearningScrollView />
 
 
   <!-- 根据 isStageVisible 属性的值来决定是否渲染 Stage 组件 -->
-  <Stage v-if="isStageVisible" />
+  <Stage v-if="isStageVisible" :toggleStageVisibility="toggleStageVisibility"/>
 
   <Footer />
 </template>

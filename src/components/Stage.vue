@@ -1,10 +1,16 @@
 <script setup>
-
+import StageButton from "@/components/StageButton.vue";
+defineProps({
+  toggleStageVisibility: {
+    type: Function,
+    required: true
+  }
+})
 </script>
 
 <template>
   <div class="stageParent">
-
+    <StageButton left="10px" top="25px" :toggleStageVisibility="toggleStageVisibility"/>
   </div>
 </template>
 

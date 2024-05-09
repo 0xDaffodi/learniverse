@@ -1,7 +1,12 @@
 <!--README:app顶部栏-->
 <script setup>
-
-
+import StageButton from "@/components/StageButton.vue";
+defineProps({
+  toggleStageVisibility: {
+    type: Function,
+    required: true
+  }
+})
 </script>
 
 <template>
@@ -31,11 +36,7 @@
       <div class="headerAssetsNumber">100</div>
       <img class="headerIconMoney" alt="" src="/assets_icon.svg" />
     </div>
-    <!--emit订阅来自父组件的方法-->
-    <div class="headerStagesParent"  @click="$emit('toggle-stage')">
-      <div class="headerStagesText">STAGE</div>
-      <img class="headerStagesIcon" alt="" src="/stage_icon.svg" />
-    </div>
+    <StageButton left="20px" top="75px" :toggleStageVisibility="toggleStageVisibility"/>
   </div>
 </template>
 
@@ -209,26 +210,6 @@
   width: 100%;
   text-align: right;
 }
-.headerStagesParent {
-  position: absolute;
-  height: 20.28px;
-  width: 80px;
-  top: 75px;
-  left: 20px;
-}
-.headerStagesText {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center; /* 在垂直方向上居中 */
-  justify-content: flex-end; /* 在水平方向上右对齐 */
-}
-.headerStagesIcon {
-  position: absolute;
-  left: 0;
-  width: 14px;
-  height: 100%;
-}
+
 
 </style>
