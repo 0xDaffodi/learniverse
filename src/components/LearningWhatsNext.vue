@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <LearningSectionTitle text="What's Next" />
-
+<!--TODO: 这里的what next的章节名称需要使用relative排布，因为有的关是三个标题-->
   <div class="learningNextParent">
     <div class="learningNextPanel">
       <div style="top:10px" class="learningNextSection">{{nextSection[0]}}</div>

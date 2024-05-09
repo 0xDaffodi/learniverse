@@ -1,7 +1,7 @@
 <script setup>
 import StageButton from "@/components/StageButton.vue";
 import StageSearch from "@/components/StageSearch.vue";
-import LearningChapter from "@/components/LearningChapter.vue";
+import StageMenu from "@/components/StageMenu.vue";
 defineProps({
   toggleStageVisibility: {
     type: Function,
@@ -15,13 +15,22 @@ defineProps({
     <StageButton left="10px" top="25px" :toggleStageVisibility="toggleStageVisibility"/>
     <StageSearch />
     <div class="stageScrollViewParent">
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
-      <LearningChapter title="" pic-url="" summary="" total-number="15" answered-number="0"/>
+      <StageMenu
+          :stage-array=
+          "[{ title: '1. Gateway to WEB 3.0', chapters: ['What is bitcoin?', 'Blockchain technology', 'Gateway into WEB 3 World']},
+            { title: '2. Platform', chapters: ['Centralized Exchange', 'Decentralized Exchange', 'Infrastructure']}]"
+          :stage-number="1" :completed-levels="2" :total-levels="2"/>
+      <StageMenu
+          :stage-array=
+              "[{ title: '1. Gateway to WEB 3.0', chapters: ['What is bitcoin?', 'Blockchain technology', 'Gateway into WEB 3 World']},
+            { title: '2. Platform', chapters: ['Centralized Exchange', 'Decentralized Exchange', 'Infrastructure']}]"
+          :stage-number="2" :completed-levels="1" :total-levels="2"/>
+      <StageMenu
+          :stage-array=
+              "[{ title: '1. Gateway to WEB 3.0', chapters: ['What is bitcoin?', 'Blockchain technology', 'Gateway into WEB 3 World']},
+            { title: '2. Platform', chapters: ['Centralized Exchange', 'Decentralized Exchange', 'Infrastructure']},
+            { title: '3. Ecosystem', chapters: ['Centralized Exchange', 'Decentralized Exchange', 'Infrastructure']}]"
+          :stage-number="3" :completed-levels="1" :total-levels="3"/>
     </div>
   </div>
 </template>
@@ -46,7 +55,9 @@ defineProps({
   width: 100%;
   height: 88%;
   top: 70px;
-  background: rgba(0, 100, 100, 0.5);
   overflow-y: auto;
+}
+.stageScrollViewParent > * {
+  margin-bottom: 15px;
 }
 </style>
