@@ -1,6 +1,7 @@
 <!--README:app顶部栏-->
 <script setup>
 import StageButton from "@/components/StageButton.vue";
+import HeaderInfo from "@/components/HeaderInfo.vue";
 defineProps({
   toggleStageVisibility: {
     type: Function,
@@ -28,14 +29,8 @@ defineProps({
     </div>
     <img class="headerQuestions" alt="" src="/questions_icon.svg" />
     <img class="headerProfile" alt="" src="/profile_icon.svg" />
-    <div class="headerPointsParent">
-      <img class="headerIconTwitter" alt="" src="/points_icon.svg" />
-      <div class="headerPointsNumber">100</div>
-    </div>
-    <div class="headerAssetsParent">
-      <div class="headerAssetsNumber">100</div>
-      <img class="headerIconMoney" alt="" src="/assets_icon.svg" />
-    </div>
+    <HeaderInfo right="16px" top="75px" icon-size="17px" icon-url="/points_icon.svg"/>
+    <HeaderInfo right="100px" top="75px" icon-size="24px" icon-url="/assets_icon.svg"/>
     <StageButton left="20px" top="75px" :toggleStageVisibility="toggleStageVisibility"/>
   </div>
 </template>
@@ -160,55 +155,6 @@ defineProps({
   left: 10px;
   width: 45px;
   height: 45px;
-}
-.headerPointsParent {
-  position: absolute;
-  height: 20.28px;
-  width: 60px;
-  top: 75px;
-  right: 16px;
-  /* background: rgba(0, 255, 255, 0.5); */
-}
-.headerPointsNumber {
-  display: flex;
-  align-items: center; /* 在垂直方向上居中 */
-  justify-content: flex-end; /* 在水平方向上右对齐 */
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: right;
-}
-.headerIconTwitter {
-  position: absolute;
-  height: 17px;
-  width: 17px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.headerAssetsParent {
-  position: absolute;
-  height: 20.28px;
-  width: 60px;
-  top: 75px;
-  right: 100px;
-}
-.headerIconMoney {
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.headerAssetsNumber {
-  display: flex;
-  align-items: center; /* 在垂直方向上居中 */
-  justify-content: flex-end; /* 在水平方向上右对齐 */
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: right;
 }
 
 

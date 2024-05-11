@@ -1,5 +1,6 @@
 <!--README:app learning chapter组件-->
 <script setup>
+import {controlPages} from "@/events.js";
 defineProps({
   // 本章节是否已经完成
   finish: {
@@ -30,12 +31,12 @@ defineProps({
   picUrl: {
     type: String,
     required: true
-  },
+  }
 })
 </script>
 
 <template>
-  <div class="learningChapterParent">
+  <div class="learningChapterParent" @click="controlPages('readingPage')">
     <div class="learningChapterGreyPanel">
       <div class="learningChapterInner" />
       <div class="learningChapterTitle">{{title}}</div>
