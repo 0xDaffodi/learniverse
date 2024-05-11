@@ -5,7 +5,7 @@ import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
 import LearningSectionTest from "@/components/LearningSectionTest.vue";
 import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
 </script>
-
+<!--TODO:这里的数据后面都要替换成后端数据-->
 <template>
   <div class="learningScrollViewParent">
     <LearningSectionTitle

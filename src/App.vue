@@ -4,7 +4,7 @@ import ReadingPage from "@/mainPages/ReadingPage.vue";
 import {controlPages} from "@/events.js";
 import {pagesController} from "@/events.js";
 // 页面初加载，默认打开learn page
-controlPages("learnPage");
+controlPages("readingPage");
 </script>
 <!--TODO: PWA ICON图片需要修改正式版本-->
 <!--TODO: 修改*HEADER FOOTER的弹性布局以应对网页版本-->
