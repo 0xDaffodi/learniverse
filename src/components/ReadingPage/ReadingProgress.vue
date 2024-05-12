@@ -1,13 +1,13 @@
 <script setup>
-import {ref} from "vue";
-
-const scrollDown = ref(true);
+import {readingScrollViewScrollDown} from "@/events.js";
 </script>
 
 <template>
+<!--TODO:阅读时间传入数据可更改-->
+<!--TODO:更改progress进度条-->
 <div class="readingProgressParent">
   <div class="readingProgressPanel">
-    <div v-if="scrollDown">
+    <div v-if="readingScrollViewScrollDown">
       <div class="readingProgressQuiz">Quiz</div>
       <div class="readingProgressChapterName">What is bitcoin?</div>
       <div class="readingProgressStartQuizButton">
@@ -17,7 +17,10 @@ const scrollDown = ref(true);
       </div>
     </div>
     <div v-else>
-
+      <div class="readingProgressReadingLeft">3 mins reading</div>
+      <div class="readingProgressReadingBar">
+        <div class="readingProgressReadingBarText">Progress: 100%</div>
+      </div>
     </div>
   </div>
 </div>
@@ -90,5 +93,37 @@ const scrollDown = ref(true);
   top: 50%;
   transform: translateY(-50%);
   filter: grayscale(100%) brightness(0);
+}
+.readingProgressReadingLeft {
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: Fredoka-Medium;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.readingProgressReadingBar {
+  position: absolute;
+  height: 37px;
+  width: 186px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(240deg, #fdc2e3, #a4ffe7 40%, #d779ff), linear-gradient(280deg, #FF46B5, #00E2AE, #7F00BB);
+}
+.readingProgressReadingBarText {
+  position: relative;
+  color: black;
+  font-size: 15px;
+  font-family: Fredoka-SemiBold;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 </style>

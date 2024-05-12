@@ -1,6 +1,6 @@
 <!--README:app learning chapter组件-->
 <script setup>
-import {controlPages} from "@/events.js";
+import {controlPages, readingScrollViewScrollDown} from "@/events.js";
 defineProps({
   // 本章节是否已经完成
   finish: {
@@ -33,10 +33,14 @@ defineProps({
     required: true
   }
 })
+function thisControlPage() {
+  controlPages('readingPage');
+  readingScrollViewScrollDown.value = false;
+}
 </script>
 
 <template>
-  <div class="learningChapterParent" @click="controlPages('readingPage')">
+  <div class="learningChapterParent" @click="thisControlPage">
     <div class="learningChapterGreyPanel">
       <div class="learningChapterInner" />
       <div class="learningChapterTitle">{{title}}</div>

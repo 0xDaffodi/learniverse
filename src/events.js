@@ -1,6 +1,6 @@
 // 通过模块化js管理各个页面之间的状态
 // TODO: stage side page也可以用这种方法来处理
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 // MENTION：一定要采用响应式，否则app中不会刷新状态
 export const pagesController = reactive({
     learnPage: false,
@@ -12,3 +12,8 @@ export function controlPages(currentPage) {
     // 然后将当前页面设置为true
     pagesController[currentPage] = true;
 }
+
+
+
+// 管理阅读的时候，是否滑动到了文章的末尾
+export const readingScrollViewScrollDown = ref(false);
