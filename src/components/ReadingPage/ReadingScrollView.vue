@@ -1,8 +1,8 @@
 <script setup>
-import LearningSectionTest from "@/components/LearningSectionTest.vue";
-import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
-import LearningChapter from "@/components/LearningChapter.vue";
-import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
+import LearningSectionTest from "@/components/LearnPage/LearningSectionTest.vue";
+import LearningSectionTitle from "@/components/LearnPage/LearningSectionTitle.vue";
+import LearningChapter from "@/components/LearnPage/LearningChapter.vue";
+import LearningWhatsNext from "@/components/LearnPage/LearningWhatsNext.vue";
 // TODO: 这里需要改成传入prop的形式
 </script>
 

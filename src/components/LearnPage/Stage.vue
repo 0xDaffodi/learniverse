@@ -1,7 +1,7 @@
 <script setup>
-import StageButton from "@/components/StageButton.vue";
-import StageSearch from "@/components/StageSearch.vue";
-import StageMenu from "@/components/StageMenu.vue";
+import StageButton from "@/components/LearnPage/StageButton.vue";
+import StageSearch from "@/components/LearnPage/StageSearch.vue";
+import StageMenu from "@/components/LearnPage/StageMenu.vue";
 defineProps({
   toggleStageVisibility: {
     type: Function,

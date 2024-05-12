@@ -1,9 +1,9 @@
 <script setup>
-import Footer from "@/components/Footer.vue";
-import Header from "@/components/Header.vue";
-import LearningScrollView from "@/components/LearningScrollView.vue";
+import Footer from "@/components/LearnPage/Footer.vue";
+import Header from "@/components/LearnPage/Header.vue";
+import LearningScrollView from "@/components/LearnPage/LearningScrollView.vue";
 import {ref} from "vue";
-import Stage from "@/components/Stage.vue";
+import Stage from "@/components/LearnPage/Stage.vue";
 
 // TODO: 其实这里可以用event js来控制
 // 创建一个响应式的布尔类型的数据属性

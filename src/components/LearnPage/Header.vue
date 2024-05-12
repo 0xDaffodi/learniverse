@@ -1,7 +1,7 @@
 <!--README:app顶部栏-->
 <script setup>
-import StageButton from "@/components/StageButton.vue";
-import HeaderInfo from "@/components/HeaderInfo.vue";
+import StageButton from "@/components/LearnPage/StageButton.vue";
+import HeaderInfo from "@/components/LearnPage/HeaderInfo.vue";
 defineProps({
   toggleStageVisibility: {
     type: Function,

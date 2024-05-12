@@ -1,9 +1,9 @@
 <!--README:app learning scroll view-->
 <script setup>
-import LearningChapter from "@/components/LearningChapter.vue";
-import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
-import LearningSectionTest from "@/components/LearningSectionTest.vue";
-import LearningWhatsNext from "@/components/LearningWhatsNext.vue";
+import LearningChapter from "@/components/LearnPage/LearningChapter.vue";
+import LearningSectionTitle from "@/components/LearnPage/LearningSectionTitle.vue";
+import LearningSectionTest from "@/components/LearnPage/LearningSectionTest.vue";
+import LearningWhatsNext from "@/components/LearnPage/LearningWhatsNext.vue";
 </script>
 <!--TODO:这里的数据后面都要替换成后端数据-->
 <template>

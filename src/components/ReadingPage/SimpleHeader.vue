@@ -1,5 +1,5 @@
 <script setup>
-import HeaderInfo from "@/components/HeaderInfo.vue";
+import HeaderInfo from "@/components/LearnPage/HeaderInfo.vue";
 import {controlPages} from "@/events.js";
 </script>
 

@@ -1,5 +1,5 @@
 <script setup>
-import LearningSectionTitle from "@/components/LearningSectionTitle.vue";
+import LearningSectionTitle from "@/components/LearnPage/LearningSectionTitle.vue";
 defineProps({
   // 本章节是否已经完成
   nextSection: {
