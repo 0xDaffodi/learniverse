@@ -10,6 +10,7 @@
   font-weight: normal;
   /*避免移动端背景的过度滑动*/
   /*overflow: hidden;*/
+  overflow-y: hidden;
 }
 
 /*这是一个复合选择器，选择了所有的锚元素（a）和具有"class"属性为"green"的元素，并为它们定义了一系列共同的样式属性*/
