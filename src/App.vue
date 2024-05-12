@@ -15,8 +15,8 @@ controlPages("readingPage");
 
 <template>
 
-  <LearnPage v-if="pagesController.learnPage"/>
-  <ReadingPage v-if="pagesController.readingPage"/>
+<!--  <LearnPage v-if="pagesController.learnPage"/>-->
+<!--  <ReadingPage v-if="pagesController.readingPage"/>-->
 
 </template>
 
