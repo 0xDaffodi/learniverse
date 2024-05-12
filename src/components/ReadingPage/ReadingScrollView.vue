@@ -28,7 +28,7 @@ import LearningWhatsNext from "@/components/LearnPage/LearningWhatsNext.vue";
 .readingScrollViewParent {
   width: 100%;
   position: fixed;
-  height: 78%;
+  height: 80%;
   top: 75px;
   left: 50%;
   transform: translateX(-50%);
