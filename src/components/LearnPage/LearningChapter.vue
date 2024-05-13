@@ -1,6 +1,6 @@
 <!--README:app learning chapter组件-->
 <script setup>
-import {controlPages, readingScrollViewScrollDown} from "@/events.js";
+import {controlPages, readingScrollViewScrollDown, pagesStrings} from "@/events.js";
 defineProps({
   // 本章节是否已经完成
   finish: {
@@ -34,7 +34,7 @@ defineProps({
   }
 })
 function thisControlPage() {
-  controlPages('readingPage');
+  controlPages(pagesStrings.READING_PAGE);
   readingScrollViewScrollDown.value = false;
 }
 </script>

@@ -1,5 +1,6 @@
 <script setup>
 import {readingScrollViewScrollDown} from "@/events.js";
+import {controlPages, pagesStrings} from "@/events.js";
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import {readingScrollViewScrollDown} from "@/events.js";
     <div v-if="readingScrollViewScrollDown">
       <div class="readingProgressQuiz">Quiz</div>
       <div class="readingProgressChapterName">What is bitcoin?</div>
-      <div class="readingProgressStartQuizButton">
+      <div class="readingProgressStartQuizButton" @click="controlPages(pagesStrings.LEARN_PAGE)">
         <div style="left: 50px" class="readingProgressStartQuizButtonText">Start:</div>
         <img class="readingProgressStartQuizButtonIcon" alt="" src="/points_icon.svg"/>
         <div style="left: 115px" class="readingProgressStartQuizButtonText">100</div>
