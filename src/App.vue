@@ -1,10 +1,19 @@
 <script setup>
 import LearnPage from "@/mainPages/LearnPage.vue";
 import ReadingPage from "@/mainPages/ReadingPage.vue";
-import {controlPages, pagesController, pagesStrings} from "@/events.js";
+import { controlPages, pagesController, pagesStrings } from "@/events.js";
 import QuizPage from "@/mainPages/QuizPage.vue";
-// 页面初加载，默认打开learn page
-controlPages(pagesStrings.LEARN_PAGE);
+import { ApiService } from "./api";
+import { onMounted } from "vue";
+
+onMounted(async () => {
+  const apiService = new ApiService;
+  // 页面初加载,首先获取 content menu
+  await apiService.getMenu();
+  // 页面初加载,默认打开 learn page
+  controlPages(pagesStrings.LEARN_PAGE);
+});
+
 </script>
 <!--TODO: PWA ICON图片需要修改正式版本-->
 <!--TODO: 修改*HEADER FOOTER的弹性布局以应对网页版本-->
